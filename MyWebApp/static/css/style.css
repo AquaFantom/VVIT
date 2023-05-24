@@ -1,0 +1,48 @@
+body {
+    background-color: #ffb09e;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif, serif;
+    font-size: 20px;
+}
+
+p.flash {
+    color: #d68472;
+}
+
+input {
+    border: 4px white;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    color: #d68472;
+    font-family: 'Arial Black', sans-serif, serif;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+input[type=password] {
+    color: #d68472;
+    font-family: 'Arial Black', sans-serif, serif;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+input[type=submit] {
+    font-family: 'Arial Black', sans-serif, serif;
+    font-size: 20px;
+    background-color: white;
+    color: #d68472;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    font-family: 'Arial Black', sans-serif, serif;
+    font-size: 20px;
+    background-color: #d68472;
+    color: white;
+}

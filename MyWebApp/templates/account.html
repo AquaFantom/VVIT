@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <title>Account</title>
+</head>
+<body>
+<form action="" method="post">
+        {% if full_name %}
+        <p>Hello, {{full_name}}! </p>
+        <p>Your login: {{login}}</p>
+        <p>Your password: {{password}}</p>
+        {% else %}
+        <p> Invalid login or password</p>
+        {% endif%}
+    <p><input type="submit" value="Logout" name="logout"></p>
+    </form>
+
+</body>
+</html>

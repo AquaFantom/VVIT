@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+			 <p class="flash">{{ message }}</p>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+    <form action="" method="post">
+        <p>
+	    <label for="username">Username</label>
+	    <input type="text" name="username">
+	</p>
+	<p>
+	    <label for="password">Password</label>
+	    <input type="password" name="password">
+	</p>
+	<p>
+		<input type="submit" value="Login" name="login">
+  		<input type="submit" value="Registration" name="registration">
+	</p>
+    </form>
+</body>
+</html>
